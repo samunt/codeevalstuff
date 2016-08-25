@@ -1,0 +1,7 @@
+num = 1 + rand(20)
+do until guess == num
+  puts "Guess a number between 1 and 20"
+  guess = gets.chomp!
+  puts "RIGHT!" if num == guess
+  puts "WRONG" if num != guess
+end
